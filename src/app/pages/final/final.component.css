@@ -1,0 +1,55 @@
+.card {
+    width: 700px;
+}
+.center{
+    text-align: center;
+}
+img {
+    width: 20%;
+    height: 20%;
+}
+
+p{
+    font-style: italic;
+    font-size: large;
+    color: #000;
+}
+.holdup {
+    color: red;
+    font-family: Helvetica;
+    font-size: 24px;
+    font-weight: bold;}
+
+.img {
+width: 400px;
+height: 400px;
+}
+
+.box {
+
+    position: fixed;
+    transform: translateX(-50%);
+  
+    animation: descendre 20s linear forwards;
+  
+  }
+ 
+  
+  
+  @keyframes descendre {
+  
+    0% {
+  
+      transform: translateY(0);
+  
+    }
+  
+    100% {
+  
+      transform: translateY(100vh);
+  
+      opacity: 0;
+  
+    }
+  
+  }

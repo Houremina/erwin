@@ -1,0 +1,145 @@
+
+<mat-card class="card" *ngIf="steps==1">
+    <mat-card-content>
+
+        <div class="center">
+            
+
+          <div class="lineaire-simple">
+          <p class="holdup">Nostalgie</p>
+            <p>When was the day we saw for the first time eacheother </p> 
+            <p>in real life ?</p> 
+            
+            <div *ngIf="getGoodAnswer()"><img src="assets/loving.png" ></div>
+            <div *ngIf="getBadAnswer()"><img src="assets/angry.png" ></div>
+            <br/>
+            <br/>
+            <div>
+              <mat-grid-list cols="2" rowHeight="50px">
+                <mat-grid-tile><button (click)="choose(false)" mat-flat-button color="warn">juin    2022 </button></mat-grid-tile>
+                <mat-grid-tile><button (click)="choose(true)" mat-flat-button color="warn">juillet 2022 </button></mat-grid-tile>
+                <mat-grid-tile><button (click)="choose(false)" mat-flat-button color="warn">Octobre 2022 </button></mat-grid-tile>
+                <mat-grid-tile><button (click)="choose(false)" mat-flat-button color="warn">Janvier 2023</button></mat-grid-tile>
+              </mat-grid-list>
+            
+            </div><br/><br/>
+            <button (click)="next(2)" mat-flat-button color="warn" [disabled]="activeNext()">next</button>
+            <br/><br/><br/>
+
+          </div>
+    </div>
+                 <mat-divider></mat-divider>
+    </mat-card-content>
+
+    <mat-card-footer>
+     
+      <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+    </mat-card-footer>
+  </mat-card>
+
+  <mat-card class="card" *ngIf="steps==2">
+    <mat-card-content>
+
+        <div class="center">
+            
+
+          <div [class]="reponse">
+          <p class="holdup">Afolki new</p>
+            <p>What's your favourite part of m Body ? </p> 
+            <div *ngIf="getGoodAnswer()"><img src="assets/loving.png" ></div>
+            <div *ngIf="getBadAnswer()"><img src="assets/angry.png" ></div>
+            <br/>
+            <br/>
+            <div>
+              <mat-grid-list cols="2" rowHeight="50px">
+                <mat-grid-tile><button (click)="choose(false)" mat-flat-button color="warn">Tiwalliiin </button></mat-grid-tile>
+                <mat-grid-tile><button (click)="choose(false)" mat-flat-button color="warn">azzaaar </button></mat-grid-tile>
+                <mat-grid-tile><button (click)="choose(false)" mat-flat-button color="warn">Tigoziiin </button></mat-grid-tile>
+                <mat-grid-tile><button (click)="choose(true)" mat-flat-button color="warn">Tadhrt new </button></mat-grid-tile>
+              </mat-grid-list>
+            
+            </div>
+            <br/><br/>
+            <button (click)="next(3)" mat-flat-button color="warn" [disabled]="activeNext()">next</button>
+            <br/><br/><br/>
+          </div>
+    </div>
+                 <mat-divider></mat-divider>
+    </mat-card-content>
+
+    <mat-card-footer>
+     
+      <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+    </mat-card-footer>
+  </mat-card>
+  <mat-card class="card" *ngIf="steps==3">
+    <mat-card-content>
+
+        <div class="center">
+            
+
+          <div [class]="reponse">
+          <p class="holdup">Thinking ......</p>
+            <p>How much do I love you ? </p> 
+            <div *ngIf="getGoodAnswer()"><img src="assets/lauph.png" ></div>
+            <div *ngIf="getBadAnswer()"><img src="assets/angry.png" ></div>
+            <br/>
+            <br/>
+            <div>
+              <mat-grid-list cols="2" rowHeight="50px">
+                <mat-grid-tile><button (click)="choose(false)" mat-flat-button color="warn">Juchkalechpache </button></mat-grid-tile>
+                <mat-grid-tile><button (click)="choose(false)" mat-flat-button color="warn">mnghid s lhind </button></mat-grid-tile>
+                <mat-grid-tile><button (click)="choose(true)" mat-flat-button color="warn">Imikooooooooook </button></mat-grid-tile>
+                <mat-grid-tile><button (click)="choose(false)" mat-flat-button color="warn">A l'univeeeeeer</button></mat-grid-tile>
+              </mat-grid-list>
+            
+            </div>
+            
+            <br/><br/>
+            <button (click)="next(4)" mat-flat-button color="warn" [disabled]="activeNext()">next</button>
+            <br/><br/><br/>
+          </div>
+    </div>
+                 <mat-divider></mat-divider>
+    </mat-card-content>
+
+    <mat-card-footer>
+     
+      <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+    </mat-card-footer>
+  </mat-card>
+  <mat-card class="card lineaire-simple" *ngIf="steps==4">
+    <mat-card-content>
+
+        <div class="center">
+            
+
+          <div [class]="reponse">
+          <p class="holdup">Swingem mzn ......</p>
+            <p>Mad 7melh le plus I7li7 tamank? </p> 
+            <div *ngIf="getGoodAnswer()"><img src="assets/lauph.png" ></div>
+            <div *ngIf="getBadAnswer()"><a><img src="assets/angry.png" title="cherche l'indice h la page" ></a></div>
+            <br/>
+            <br/>
+            <div>
+              <mat-grid-list cols="2" rowHeight="50px">
+                <mat-grid-tile><button (click)="choose(false)" mat-flat-button color="warn">calins </button></mat-grid-tile>
+                <mat-grid-tile><button (click)="choose(false)" mat-flat-button color="warn">Kisses </button></mat-grid-tile>
+                <mat-grid-tile><button (click)="choose(false)" mat-flat-button color="warn">atgr7 ich3rnk</button></mat-grid-tile>
+                <mat-grid-tile><button (click)="choose(false)" mat-flat-button color="warn">ak kttooo7</button></mat-grid-tile>
+              </mat-grid-list>
+            
+            </div>
+            <br/><br/>
+            <button (click)="next(5)" mat-flat-button color="warn" [disabled]="activeNext()">next</button>
+            <br/><br/><br/>
+          </div>
+    </div>
+                 <mat-divider></mat-divider>
+    </mat-card-content>
+
+    <mat-card-footer>
+     
+      <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+    </mat-card-footer>
+  </mat-card>

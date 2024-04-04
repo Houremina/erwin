@@ -1,0 +1,19 @@
+.dg-heart:empty { display:block;}
+.dg-heart {
+  min-width: 25px;
+  min-height: 25px;
+  font-size: 21px;
+  color: #E31B23;
+  position: fixed;
+  opacity:0.8;
+  z-index:999;
+  top:-15vh;
+}
+
+@keyframes rain-of-hearts {
+  0%{transform:translateY(-10vh) rotateZ(0)}
+  25%{transform:translateY(27vh) rotateZ(20deg)}
+  50%{transform:translateY(55vh) rotateZ(-20deg)}
+  75%{transform:translateY(90vh) rotateZ(20deg)}
+  100%{transform:translateY(120vh) rotateZ(-20deg)}
+}

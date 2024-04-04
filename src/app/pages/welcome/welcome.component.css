@@ -1,0 +1,105 @@
+.card {
+    width: 700px;
+  }
+
+  .img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .center {
+    text-align: center;
+
+  }
+
+  .shine div {
+	position: relative;
+}
+.shine ::before {
+	position: absolute;
+	top: 0;
+	left: -75%;
+	z-index: 2;
+	display: block;
+	content: '';
+	width: 50%;
+	height: 100%;
+	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	-webkit-transform: skewX(-25deg);
+	transform: skewX(-25deg);
+}
+.shine :hover::before {
+	-webkit-animation: shine .75s;
+	animation: shine .75s;
+}
+@-webkit-keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+@keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+.box {
+
+    position: fixed;
+   
+  text-align: center;
+  margin-left: 100px;
+    transform: translateX(-50%);
+  
+    animation: descendre 20s linear forwards;
+  
+  }
+  .box2 {
+
+    position: fixed;
+   
+  text-align:left;
+  
+    transform: translateX(-50%);
+  
+    animation: descendre 10s linear forwards;
+  
+  }
+  
+  
+  @keyframes descendre {
+  
+    0% {
+  
+      transform: translateY(0);
+  
+    }
+  
+    100% {
+  
+      transform: translateY(100vh);
+  
+      opacity: 0;
+  
+    }
+  
+  }
+  .name {
+    color: red;
+  }
+  .glad {
+
+    opacity: 0;
+  
+    animation: fadeIn 1s ease-in-out 2s forwards;
+  
+  }
+  
+  @keyframes fadeIn {
+  
+    to {
+  
+      opacity: 1;
+  
+    }
+}
